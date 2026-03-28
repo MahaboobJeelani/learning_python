@@ -6,13 +6,13 @@ from typing import List, Optional
 book_router = APIRouter()
 
 
-@book_router.get("/")
-def health_check():
-    return {"message": "Server is health is good"}
+# @book_router.get("/")
+# def health_check():
+#     return {"message": "Server is health is good"}
 
-@book_router.get('/greed ')
-def greed_name(name:Optional[str] = "User"):
-    return {"message":f"{name}"}
+# @book_router.get('/greed ')
+# def greed_name(name:Optional[str] = "User"):
+#     return {"message":f"{name}"}
 
 
 @book_router.get("/", response_model=List[Book])
