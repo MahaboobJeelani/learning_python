@@ -13,7 +13,6 @@ class Book(BaseModel):
         created_at: datetime
         update_at: datetime
 
-
 class BookCreateModel(BaseModel):
         title: str
         author: str 
@@ -21,6 +20,7 @@ class BookCreateModel(BaseModel):
         published_date: str
         page_count: str
         language: str
+
 class UpdateBook(BaseModel):
         title: str
         author: str 
